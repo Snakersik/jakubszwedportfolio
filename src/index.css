@@ -1,0 +1,241 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Playfair Display", serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #000000;
+  color: white;
+
+  line-height: 0.4;
+  font-weight: 400;
+}
+
+code {
+  font-family: "Playfair Display", serif;
+}
+
+.app {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1440px;
+}
+
+h1 {
+  font-weight: bold;
+  font-size: 48px;
+}
+
+h2 {
+  font-size: 34px;
+}
+
+p {
+  font-size: 24px;
+}
+
+.landing {
+  background-image: url("assets/img/LandingBackground.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 790px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo {
+  background-color: rgba(61, 56, 56, 0.45);
+  padding: 10px;
+  text-align: center;
+}
+
+.description {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+  gap: 30px;
+
+  justify-content: center;
+}
+
+.category {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  gap: 144px;
+}
+
+.category p {
+  cursor: pointer;
+}
+
+.active {
+  color: gray;
+}
+
+.active::after {
+  content: "";
+  display: inline-block;
+  width: 100%;
+  height: 4px;
+  margin-top: 3px;
+  background-color: gray;
+}
+
+.category p:hover {
+  color: gray;
+}
+
+.portfolio {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px;
+  margin-top: 30px;
+  justify-content: space-between;
+}
+
+.portfolio .image-container:hover {
+  scale: 1.1;
+  transition: scale 0.3s;
+}
+
+.portfolio .image-container {
+  position: relative;
+  background-position: center;
+  display: flex;
+
+  height: 270px;
+  width: 440px;
+}
+
+.image-container i {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  cursor: pointer;
+}
+
+.image-container i:hover {
+  color: #ebebeb;
+  transition: color 0.3s;
+}
+
+.modal {
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+iframe {
+  width: 60%;
+  height: 60%;
+}
+
+.modal i {
+  position: absolute;
+  transform: translate(-20%, -82%);
+  top: 20%;
+  left: 82%;
+  cursor: pointer;
+}
+
+.contact-section {
+  margin-top: 100px;
+  display: flex;
+  gap: 50px;
+  justify-content: space-between;
+  margin-bottom: 100px;
+}
+
+.contact-section img {
+  height: 450px;
+  width: 60%;
+  filter: brightness(0.6);
+}
+
+.contact-information {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+p i {
+  padding-right: 20px;
+  cursor: pointer;
+}
+
+.icons {
+  padding-top: 50px;
+  display: flex;
+  gap: 40px;
+}
+.icons i {
+  cursor: pointer;
+}
+
+@media (max-width: 1440px) {
+  .portfolio {
+    justify-content: center;
+    gap: 0;
+  }
+  .contact-information {
+    padding-left: 20px;
+    line-height: 1;
+  }
+  .portfolio .image-container {
+    width: 30vw;
+  }
+}
+
+@media (max-width: 900px) {
+  .portfolio .image-container {
+    width: 440px;
+  }
+  h1 {
+    font-size: 36px;
+  }
+  h2 {
+    font-size: 24px;
+  }
+  h3 {
+    font-size: 17px;
+  }
+  p {
+    font-size: 17px;
+  }
+  .description {
+    gap: 5px;
+  }
+
+  .contact-section {
+    flex-direction: column-reverse;
+  }
+  .contact-section img {
+    width: 100%;
+    height: auto;
+    display: none;
+  }
+  .contact-information {
+    align-items: center;
+  }
+
+  .contact-information p {
+    text-align: right;
+  }
+  .portfolio {
+    gap: 0px;
+  }
+}
