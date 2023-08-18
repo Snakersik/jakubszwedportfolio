@@ -153,7 +153,7 @@ const Contact = () => {
         </p>
         <div className="icons">
           <a
-            href="https://instagram.com/kubus.alkthr?utm_source=qr&igshid=NGExMmI2YTkyZg%3D%3D"
+            href="https://www.facebook.com/jakub.szwed.942/"
             target="_blank"
             rel="noreferrer"
           >
@@ -167,11 +167,11 @@ const Contact = () => {
             <i class="fa-brands fa-instagram fa-3x"></i>
           </a>
           <a
-            href="https://instagram.com/kubus.alkthr?utm_source=qr&igshid=NGExMmI2YTkyZg%3D%3D"
+            href="https://www.youtube.com/@jakubszwedfilms/featured"
             target="_blank"
             rel="noreferrer"
           >
-            <i class="fa-brands fa-vimeo fa-3x"></i>
+            <i class="fa-brands fa-youtube fa-3x"></i>
           </a>
         </div>
       </div>

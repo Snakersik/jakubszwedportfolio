@@ -231,10 +231,11 @@ p i {
     align-items: center;
   }
 
-  .contact-information p {
-    text-align: right;
-  }
   .portfolio {
     gap: 0px;
+  }
+  iframe {
+    width: 90vw;
+    height: 50vh;
   }
 }
