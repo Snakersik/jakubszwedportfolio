@@ -32,17 +32,15 @@ function App() {
 
 const Landing = () => {
   return (
-    <div className="landing">
-      <div className="logo">
-        <h1>Jakub Szwed</h1>
-        <h2>FILMMAKER</h2>
-        <div className="description">
-          <h3>EDITING </h3>
+    <div className="logo">
+      <h1>Jakub Szwed</h1>
+      <h2>FILMMAKER</h2>
+      <div className="description">
+        <h3>EDITING </h3>
 
-          <h3> CINEMATOGRAPHY </h3>
+        <h3> CINEMATOGRAPHY </h3>
 
-          <h3> MUSIC VIDEO</h3>
-        </div>
+        <h3> MUSIC VIDEO</h3>
       </div>
     </div>
   );
