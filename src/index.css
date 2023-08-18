@@ -150,20 +150,23 @@ iframe {
   margin-top: 100px;
   display: flex;
   gap: 50px;
-  justify-content: space-between;
-  margin-bottom: 100px;
-}
-
-.contact-section img {
-  height: 450px;
-  width: 60%;
-  filter: brightness(0.6);
+  justify-content: center;
+  margin-bottom: 20px;
 }
 
 .contact-information {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  margin: auto;
+}
+
+.contact-legend {
+  margin: auto;
+}
+
+.contact-legend p {
+  padding-bottom: 25px;
 }
 
 p i {
@@ -172,8 +175,8 @@ p i {
 }
 
 .icons {
-  padding-top: 50px;
   display: flex;
+  justify-content: space-between;
   gap: 40px;
 }
 .icons i {

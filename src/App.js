@@ -130,7 +130,6 @@ const ContactSection = () => {
   return (
     <div className="contact-section">
       <Contact />
-      <img src={contactPhoto} alt="contact information camera "></img>
     </div>
   );
 };
@@ -139,23 +138,24 @@ const Contact = () => {
   return (
     <div className="contact-information">
       <h1>Contact information</h1>
-
-      <p>
-        <i class="fa-solid fa-phone"></i>
-        +48 784 114 958
-      </p>
-      <p>
-        <i class="fa-solid fa-envelope"></i>
-        jsz.2002@gmail.com
-      </p>
-      <p>
-        <i class="fa-solid fa-location-dot"></i>
-        Poland, Wrocław 50-433
-      </p>
-      <div className="icons">
-        <i class="fa-brands fa-facebook fa-3x"></i>
-        <i class="fa-brands fa-instagram fa-3x"></i>
-        <i class="fa-brands fa-vimeo fa-3x"></i>
+      <div className="contact-legend">
+        <p>
+          <i class="fa-solid fa-phone"></i>
+          +48 784 114 958
+        </p>
+        <p>
+          <i class="fa-solid fa-envelope"></i>
+          jsz.2002@gmail.com
+        </p>
+        <p>
+          <i class="fa-solid fa-location-dot"></i>
+          Poland, Wrocław 50-433
+        </p>
+        <div className="icons">
+          <i class="fa-brands fa-facebook fa-3x"></i>
+          <i class="fa-brands fa-instagram fa-3x"></i>
+          <i class="fa-brands fa-vimeo fa-3x"></i>
+        </div>
       </div>
     </div>
   );
