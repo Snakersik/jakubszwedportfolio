@@ -1,7 +1,7 @@
 import thumbnail1 from "./assets/img/thumbnail1.jpg";
 import thumbnail2 from "./assets/img/thumbnail2.jpg";
 import thumbnail3 from "./assets/img/thumbnail3.jpg";
-import contactPhoto from "./assets/img/contactRighBg.png";
+
 import { useState, useEffect, useCallback } from "react";
 
 const thumbList = [
@@ -152,9 +152,27 @@ const Contact = () => {
           Poland, Wrocław 50-433
         </p>
         <div className="icons">
-          <i class="fa-brands fa-facebook fa-3x"></i>
-          <i class="fa-brands fa-instagram fa-3x"></i>
-          <i class="fa-brands fa-vimeo fa-3x"></i>
+          <a
+            href="https://instagram.com/kubus.alkthr?utm_source=qr&igshid=NGExMmI2YTkyZg%3D%3D"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <i class="fa-brands fa-facebook fa-3x"></i>
+          </a>
+          <a
+            href="https://instagram.com/kubus.alkthr?utm_source=qr&igshid=NGExMmI2YTkyZg%3D%3D"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <i class="fa-brands fa-instagram fa-3x"></i>
+          </a>
+          <a
+            href="https://instagram.com/kubus.alkthr?utm_source=qr&igshid=NGExMmI2YTkyZg%3D%3D"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <i class="fa-brands fa-vimeo fa-3x"></i>
+          </a>
         </div>
       </div>
     </div>

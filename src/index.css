@@ -179,8 +179,10 @@ p i {
   justify-content: space-between;
   gap: 40px;
 }
-.icons i {
+.icons a {
   cursor: pointer;
+  color: #ffffff;
+  text-decoration: none;
 }
 
 @media (max-width: 1440px) {
