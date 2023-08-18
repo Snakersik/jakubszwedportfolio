@@ -183,7 +183,7 @@ p i {
 @media (max-width: 1440px) {
   .portfolio {
     justify-content: center;
-    gap: 0;
+    gap: 15px;
   }
   .contact-information {
     padding-left: 20px;
