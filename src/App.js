@@ -1,6 +1,7 @@
 import thumbnail1 from "./assets/img/thumbnail1.jpg";
 import thumbnail2 from "./assets/img/thumbnail2.jpg";
 import thumbnail3 from "./assets/img/thumbnail3.jpg";
+import thumbnail4 from "./assets/img/thumbnail4.jpg";
 
 import { useState, useEffect, useCallback } from "react";
 
@@ -16,6 +17,10 @@ const thumbList = [
   {
     name: thumbnail3,
     link: "https://www.youtube.com/embed/Gk_qbXGdfNM?si=EMMkg5nPpvWXz5w2",
+  },
+  {
+    name: thumbnail4,
+    link: "https://www.youtube.com/embed/TuZNcEucbgs?si=Hgkhg2ZcIjBJiYMF",
   },
 ];
 
