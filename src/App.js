@@ -5,6 +5,9 @@ import thumbnail4 from "./assets/img/thumbnail4.jpg";
 
 import { useState, useEffect, useCallback } from "react";
 
+
+
+// thumnbail and embeded link for adding item. IF  you want to add new item just import thumnail photo and paste link  
 const thumbList = [
   {
     name: thumbnail1,
