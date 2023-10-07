@@ -2,12 +2,11 @@ import thumbnail1 from "./assets/img/thumbnail1.jpg";
 import thumbnail2 from "./assets/img/thumbnail2.jpg";
 import thumbnail3 from "./assets/img/thumbnail3.jpg";
 import thumbnail4 from "./assets/img/thumbnail4.jpg";
+import thumbnail5 from "./assets/img/thumbnail5.jpg";
 
 import { useState, useEffect, useCallback } from "react";
 
-
-
-// thumnbail and embeded link for adding item. IF  you want to add new item just import thumnail photo and paste link  
+// thumnbail and embeded link for adding item. IF  you want to add new item just import thumnail photo and paste link
 const thumbList = [
   {
     name: thumbnail1,
@@ -24,6 +23,10 @@ const thumbList = [
   {
     name: thumbnail4,
     link: "https://www.youtube.com/embed/TuZNcEucbgs?si=Hgkhg2ZcIjBJiYMF",
+  },
+  {
+    name: thumbnail5,
+    link: "https://www.youtube.com/embed/t90qstGG_qA?si=hD9eh7NvaU52dD1_",
   },
 ];
 
