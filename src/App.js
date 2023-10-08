@@ -3,14 +3,16 @@ import thumbnail2 from "./assets/img/thumbnail2.jpg";
 import thumbnail3 from "./assets/img/thumbnail3.jpg";
 import thumbnail4 from "./assets/img/thumbnail4.jpg";
 import thumbnail5 from "./assets/img/thumbnail5.jpg";
+// here going import just copy line and change number to +1
+//and in folder assets/img put photo with name thumnbail + next letter(etc. thumnbail6 for next photo)
 
-import { useState, useEffect, useCallback } from "react";
+import { useState, useCallback } from "react";
 
 // thumnbail and embeded link for adding item. IF  you want to add new item just import thumnail photo and paste link
 const thumbList = [
   {
-    name: thumbnail1,
-    link: "https://www.youtube.com/embed/KNYcYd5y78c?si=X_tOwBlwShisFwfK",
+    name: thumbnail5,
+    link: "https://www.youtube.com/watch?si=45hT_nirBfvB_ghW&fbclid=IwAR2tJf3Z9DDvim7Tt4ES2Ocj6LSR1Ja6EvkjIvpdkRbuoqC7tr5WPfYPiJE&v=t90qstGG_qA&feature=youtu.be",
   },
   {
     name: thumbnail2,
@@ -25,8 +27,8 @@ const thumbList = [
     link: "https://www.youtube.com/embed/TuZNcEucbgs?si=Hgkhg2ZcIjBJiYMF",
   },
   {
-    name: thumbnail5,
-    link: "https://www.youtube.com/embed/t90qstGG_qA?si=hD9eh7NvaU52dD1_",
+    name: thumbnail1,
+    link: "https://www.youtube.com/embed/KNYcYd5y78c?si=X_tOwBlwShisFwfK",
   },
 ];
 
@@ -82,19 +84,10 @@ const ImageGallery = ({ thumb, link }) => {
     setDisplayModal((modal) => !modal);
   }, []);
 
-  useEffect(() => {
-    const handleKeyPress = (e) => {
-      if (e.code === "Escape" && displayModal) {
-        changeModalDisplay();
-      }
-    };
-
-    document.addEventListener("keydown", handleKeyPress);
-
-    return () => {
-      document.removeEventListener("keydown", handleKeyPress);
-    };
-  }, [changeModalDisplay, displayModal]);
+  const openInNewTab = (url) => {
+    const newWindow = window.open(url, "_blank", "noopener,noreferrer");
+    if (newWindow) newWindow.opener = null;
+  };
 
   return (
     <>
@@ -104,7 +97,13 @@ const ImageGallery = ({ thumb, link }) => {
       >
         <i
           className="fa-solid fa-play fa-4x"
-          onClick={() => changeModalDisplay()}
+          onClick={() => {
+            if (link && link !== "" && thumb === thumbList[0].name) {
+              openInNewTab(link);
+            } else {
+              changeModalDisplay();
+            }
+          }}
         ></i>
       </div>
       {displayModal ? (
