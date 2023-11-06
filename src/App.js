@@ -3,6 +3,7 @@ import thumbnail2 from "./assets/img/thumbnail2.jpg";
 import thumbnail3 from "./assets/img/thumbnail3.jpg";
 import thumbnail4 from "./assets/img/thumbnail4.jpg";
 import thumbnail5 from "./assets/img/thumbnail5.jpg";
+import thumbnail6 from "./assets/img/thumbnail6.jpg";
 // here going import just copy line and change number to +1
 //and in folder assets/img put photo with name thumnbail + next letter(etc. thumnbail6 for next photo)
 
@@ -14,6 +15,11 @@ const thumbList = [
     name: thumbnail5,
     link: "https://www.youtube.com/watch?si=45hT_nirBfvB_ghW&fbclid=IwAR2tJf3Z9DDvim7Tt4ES2Ocj6LSR1Ja6EvkjIvpdkRbuoqC7tr5WPfYPiJE&v=t90qstGG_qA&feature=youtu.be",
   },
+  {
+    name: thumbnail6,
+    link: "https://www.youtube.com/embed/y3Jn0mdA3fQ?si=Yq57A9xRpuqkGenI",
+  },
+
   {
     name: thumbnail2,
     link: "https://www.youtube.com/embed/oRUy7y00nRc?si=gkBpKLuNl07uheWi",
