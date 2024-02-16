@@ -4,6 +4,8 @@ import thumbnail3 from "./assets/img/thumbnail3.jpg";
 import thumbnail4 from "./assets/img/thumbnail4.jpg";
 import thumbnail5 from "./assets/img/thumbnail5.jpg";
 import thumbnail6 from "./assets/img/thumbnail6.jpg";
+import thumbnail7 from "./assets/img/thumbnail7.jpg";
+import thumbnail8 from "./assets/img/thumbnail8.jpg";
 // here going import just copy line and change number to +1
 //and in folder assets/img put photo with name thumnbail + next letter(etc. thumnbail6 for next photfo)
 
@@ -11,6 +13,14 @@ import { useState, useCallback } from "react";
 
 // thumnbail and embeded link for adding item. IF  you want to add new item just import thumnail photo and paste link
 const thumbList = [
+  {
+    name: thumbnail8,
+    link: "https://www.youtube.com/watch?v=WtpQOYR57ko",
+  },
+  {
+    name: thumbnail7,
+    link: "https://www.youtube.com/embed/Iw_8CK1icrw?si=E31ZE_rHsZHwQgjM",
+  },
   {
     name: thumbnail5,
     link: "https://www.youtube.com/watch?si=45hT_nirBfvB_ghW&fbclid=IwAR2tJf3Z9DDvim7Tt4ES2Ocj6LSR1Ja6EvkjIvpdkRbuoqC7tr5WPfYPiJE&v=t90qstGG_qA&feature=youtu.be",
