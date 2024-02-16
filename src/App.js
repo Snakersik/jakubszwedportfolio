@@ -23,7 +23,7 @@ const thumbList = [
   },
   {
     name: thumbnail5,
-    link: "https://www.youtube.com/watch?si=45hT_nirBfvB_ghW&fbclid=IwAR2tJf3Z9DDvim7Tt4ES2Ocj6LSR1Ja6EvkjIvpdkRbuoqC7tr5WPfYPiJE&v=t90qstGG_qA&feature=youtu.be",
+    link: "https://www.youtube.com/watch?v=t90qstGG_qA",
   },
   {
     name: thumbnail6,
