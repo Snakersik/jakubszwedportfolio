@@ -5,7 +5,7 @@ import thumbnail4 from "./assets/img/thumbnail4.jpg";
 import thumbnail5 from "./assets/img/thumbnail5.jpg";
 import thumbnail6 from "./assets/img/thumbnail6.jpg";
 // here going import just copy line and change number to +1
-//and in folder assets/img put photo with name thumnbail + next letter(etc. thumnbail6 for next photo)
+//and in folder assets/img put photo with name thumnbail + next letter(etc. thumnbail6 for next photfo)
 
 import { useState, useCallback } from "react";
 
