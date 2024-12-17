@@ -6,6 +6,11 @@ import thumbnail5 from "./assets/img/thumbnail5.jpg";
 import thumbnail6 from "./assets/img/thumbnail6.jpg";
 import thumbnail7 from "./assets/img/thumbnail7.jpg";
 import thumbnail8 from "./assets/img/thumbnail8.jpg";
+import thumbnail9 from "./assets/img/thumbnail9.jpg";
+import thumbnail10 from "./assets/img/thumbnail10.jpg";
+import thumbnail11 from "./assets/img/thumbnail11.jpg";
+import thumbnail12 from "./assets/img/thumbnail12.jpg";
+import thumbnail13 from "./assets/img/thumbnail13.jpg";
 // here going import just copy line and change number to +1
 //and in folder assets/img put photo with name thumnbail + next letter(etc. thumnbail6 for next photfo)
 
@@ -14,37 +19,71 @@ import { useState, useCallback } from "react";
 // thumnbail and embeded link for adding item. IF  you want to add new item just import thumnail photo and paste link
 const thumbList = [
   {
+    name: thumbnail10,
+    link: "https://www.youtube.com/watch?v=zSttzHLL7bA",
+    modalWin: false,
+  },
+  {
+    name: thumbnail9,
+    link: "https://www.youtube.com/watch?v=DmD4v6j2Xn4",
+    modalWin: false,
+  },
+  {
+    name: thumbnail12,
+    link: "https://www.youtube.com/watch?v=DVWhWwyIL2k",
+    modalWin: false,
+  },
+  {
     name: thumbnail8,
     link: "https://www.youtube.com/watch?v=WtpQOYR57ko",
+    modalWin: false,
   },
+
   {
     name: thumbnail7,
     link: "https://www.youtube.com/embed/Iw_8CK1icrw?si=E31ZE_rHsZHwQgjM",
+    modalWin: false,
+  },
+  {
+    name: thumbnail13,
+    link: "https://www.youtube.com/watch?v=n63ExOOVn4k",
+    modalWin: false,
+  },
+  {
+    name: thumbnail11,
+    link: "https://www.youtube.com/watch?v=zHuYHM-NMLE",
+    modalWin: false,
   },
   {
     name: thumbnail5,
     link: "https://www.youtube.com/watch?v=t90qstGG_qA",
+    modalWin: false,
   },
   {
     name: thumbnail6,
     link: "https://www.youtube.com/embed/y3Jn0mdA3fQ?si=Yq57A9xRpuqkGenI",
+    modalWin: true,
   },
 
   {
     name: thumbnail2,
     link: "https://www.youtube.com/embed/oRUy7y00nRc?si=gkBpKLuNl07uheWi",
+    modalWin: false,
   },
   {
     name: thumbnail3,
     link: "https://www.youtube.com/embed/Gk_qbXGdfNM?si=EMMkg5nPpvWXz5w2",
+    modalWin: false,
   },
   {
     name: thumbnail4,
     link: "https://www.youtube.com/embed/TuZNcEucbgs?si=Hgkhg2ZcIjBJiYMF",
+    modalWin: false,
   },
   {
     name: thumbnail1,
     link: "https://www.youtube.com/embed/KNYcYd5y78c?si=X_tOwBlwShisFwfK",
+    modalWin: false,
   },
 ];
 
@@ -87,13 +126,17 @@ const Portfolio = () => {
   return (
     <div className="portfolio">
       {thumbList.map((item) => (
-        <ImageGallery thumb={item.name} link={item.link} />
+        <ImageGallery
+          thumb={item.name}
+          link={item.link}
+          modalWin={item.modalWin}
+        />
       ))}
     </div>
   );
 };
 
-const ImageGallery = ({ thumb, link }) => {
+const ImageGallery = ({ thumb, link, modalWin }) => {
   const [displayModal, setDisplayModal] = useState(false);
 
   const changeModalDisplay = useCallback(() => {
@@ -114,7 +157,7 @@ const ImageGallery = ({ thumb, link }) => {
         <i
           className="fa-solid fa-play fa-4x"
           onClick={() => {
-            if (link && link !== "" && thumb === thumbList[0].name) {
+            if (link && link !== "" && !modalWin) {
               openInNewTab(link);
             } else {
               changeModalDisplay();
